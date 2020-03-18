@@ -1,0 +1,116 @@
+{
+  "id": "68809973-e5be-48e7-8455-a7605ac98a54",
+  "version": "2.0",
+  "name": "Survey",
+  "url": " http://demos.rsamanez.com/questionnaire-survey/surveys/2-second-cool-title",
+  "tests": [{
+    "id": "f398e076-6c0d-490f-9222-8572392f30e5",
+    "name": "survey1",
+    "commands": [{
+      "id": "d2cc47d2-0c78-42ce-9919-1af40754587f",
+      "comment": "",
+      "command": "open",
+      "target": "http://demos.rsamanez.com/questionnaire-survey/surveys/2-second-cool-title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9481669c-e12f-4b5b-b3b0-c3c0c38fd106",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1470x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9fc921d-d030-4637-b716-30377c1f514b",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(1) > .list-group-item",
+      "targets": [
+        ["css=label:nth-child(1) > .list-group-item", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/div/div[2]/ul/label/li", "xpath:idRelative"],
+        ["xpath=//label/li", "xpath:position"],
+        ["xpath=//li[contains(.,' Federica')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5915bb0-c372-4ef7-9efa-f4d3800794bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=survey[name]", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ff6c4ee-d054-4d31-9c7f-9a5616c6f8e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=survey[name]", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Selenium Tester"
+    }, {
+      "id": "c57994f8-e269-4d8b-8d9a-60a2a1e1266b",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=survey[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f674650-8bc3-477c-a57c-ae0d1de0fedd",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=survey[email]", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "selenium@test.com"
+    }, {
+      "id": "38530303-4218-4945-a9bd-7536d16af4ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Complete Survey')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f3f1dc86-d9e1-4b63-9733-71dc367d5dea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f398e076-6c0d-490f-9222-8572392f30e5"]
+  }],
+  "urls": ["http://demos.rsamanez.com/questionnaire-survey/surveys/2-second-cool-title"],
+  "plugins": []
+}
