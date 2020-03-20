@@ -25,7 +25,7 @@ class TestSurvey1():
     '6-cool-title'
   ]
   def setup_method(self):
-    self.driver = webdriver.Chrome(executable_path=r"./chromedriver")
+    self.driver = webdriver.Chrome(executable_path=r"./chromedriver.exe")
     self.vars = {}
   
   def teardown_method(self):
@@ -65,14 +65,18 @@ class TestSurvey1():
     time.sleep(1)
     self.driver.find_element(By.CSS_SELECTOR, ".btn").click()
 
-
-seed(datetime.now())
-my_delay = randint(0,60)
-print( str(my_delay) + "\n")
-if my_delay < 56 :
-  time.sleep(my_delay)
-  test1 = TestSurvey1()
-  test1.setup_method()
-  test1.test_survey1()
-  time.sleep(1)
-  test1.teardown_method()
+def run_test():
+    seed(datetime.now())
+    my_delay = randint(0,60)
+    print( str(my_delay) + "\n")
+    if my_delay < 56 :
+      time.sleep(my_delay)
+      test1 = TestSurvey1()
+      test1.setup_method()
+      test1.test_survey1()
+      time.sleep(1)
+      test1.teardown_method()
+while (1):
+    my_wait = randint(0,180)
+    time.sleep(my_wait)
+    run_test()

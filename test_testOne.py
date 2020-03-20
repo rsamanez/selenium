@@ -9,8 +9,9 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
+from random import seed
 from random import randint
+from datetime import datetime
 
 class TestTestOne():
   def setup_method(self):
@@ -37,9 +38,20 @@ class TestTestOne():
     self.driver.find_element(By.NAME, "money").send_keys(Keys.ENTER)
     time.sleep(2)
 
-test1 = TestTestOne()
-test1.setup_method()
-test1.test_testOne()
-test1.teardown_method()
+def run_test():
+    seed(datetime.now())
+    my_delay = randint(0,60)
+    print( str(my_delay) + "\n")
+    if my_delay < 56 :
+      time.sleep(my_delay)
+      test1 = TestTestOne()
+      test1.setup_method()
+      test1.test_testOne()
+      test1.teardown_method()
+while (1):
+    my_wait = randint(0,180)
+    time.sleep(my_wait)
+    run_test()
+    
 
   
