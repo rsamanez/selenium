@@ -1,0 +1,71 @@
+{
+  "id": "45f5a259-2a97-4611-97b9-96447ad1d555",
+  "version": "2.0",
+  "name": "Lambda Testing",
+  "url": "https://s32jqca7jl.execute-api.us-east-1.amazonaws.com",
+  "tests": [{
+    "id": "4572b9f1-3e5e-4b7d-a89d-2c8c3c378c5a",
+    "name": "TestOne",
+    "commands": [{
+      "id": "cc9dc7e8-379c-4ea3-ab4e-6935d99ae603",
+      "comment": "",
+      "command": "open",
+      "target": "/dev/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77a09a2a-fcf2-4d98-a604-94fed5b3085e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1603x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92ce4daa-2a7f-4de6-96d8-9ef96097b34f",
+      "comment": "",
+      "command": "click",
+      "target": "name=money",
+      "targets": [
+        ["name=money", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='money']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "281f9af1-50fe-4598-bc2a-65d76334a568",
+      "comment": "",
+      "command": "type",
+      "target": "name=money",
+      "targets": [
+        ["name=money", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='money']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "39e88e88-1436-4a9a-b61e-754276d13677",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=money",
+      "targets": [
+        ["name=money", "name"],
+        ["css=input", "css:finder"],
+        ["xpath=//input[@name='money']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "a4916834-f59f-49d8-ad75-2fdbbd64b766",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4572b9f1-3e5e-4b7d-a89d-2c8c3c378c5a"]
+  }],
+  "urls": ["https://s32jqca7jl.execute-api.us-east-1.amazonaws.com/"],
+  "plugins": []
+}
