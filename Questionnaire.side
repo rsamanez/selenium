@@ -2,7 +2,7 @@
   "id": "dc9e59f0-9c64-4ae6-8d81-01c3dc84d9b2",
   "version": "2.0",
   "name": "Questionnaire",
-  "url": "https://demos.rsamanez.com",
+  "url": "https://demos.rsamanez.com/qs/",
   "tests": [{
     "id": "2b259dd8-4bd7-43af-a280-ec32c4da2191",
     "name": "test_survey",
@@ -175,6 +175,95 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "d6cce877-2bf9-42d2-9490-a39fa3699123",
+    "name": "login",
+    "commands": [{
+      "id": "571d848b-937e-46b1-8835-d8b129abc10f",
+      "comment": "",
+      "command": "open",
+      "target": "https://demos.rsamanez.com/qs/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97d1d669-d4f3-4e1f-9bda-ffbdd7bf41e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1603x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "419b3c47-27d9-4d49-9f63-e73778bf480b",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1)",
+      "targets": [
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://demos.rsamanez.com/qs/login')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc2e8b40-bf63-4d9e-9c04-8ff70cfebc0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body",
+      "targets": [
+        ["css=.card-body", "css:finder"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6d906b-043f-434e-97e5-b33a6312ca03",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "sacaro@sac.com"
+    }, {
+      "id": "3d64af15-2c1f-4c46-9cc9-6655ca2a631a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "nuevamente"
+    }, {
+      "id": "a26078f5-606d-4f2d-8952-b0185c10af6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/main/div/div/div/div/div[2]/form/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcea34f9-b764-44a2-b744-3f80f7848e8d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "61267ec5-ce8d-474e-a91f-ce9d2b03b56b",
@@ -184,6 +273,6 @@
     "timeout": 300,
     "tests": ["2b259dd8-4bd7-43af-a280-ec32c4da2191"]
   }],
-  "urls": ["https://demos.rsamanez.com/"],
+  "urls": ["https://demos.rsamanez.com/", "https://demos.rsamanez.com/qs/"],
   "plugins": []
 }
